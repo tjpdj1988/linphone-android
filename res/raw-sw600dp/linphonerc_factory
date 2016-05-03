@@ -8,6 +8,7 @@ mtu=1300
 [sip]
 guess_hostname=1
 inc_timeout=15
+incoming_calls_early_media=1
 register_only_when_network_is_up=1
 auto_net_state_mon=0
 auto_answer_replacing_calls=1
@@ -21,6 +22,11 @@ video_jitt_comp=60
 nortp_timeout=30
 disable_upnp=1
 
+[video]
+size=vga
+automatically_accept=1
+automatically_initiate=1
+
 [sound]
 playback_dev_id=
 ringer_dev_id=
@@ -31,4 +37,5 @@ dtmf_player_amp=0.1
 ec_calibrator_cool_tones=1
 
 [misc]
-max_calls=10
+max_calls=1
+real_early_media=1
